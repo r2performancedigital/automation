@@ -18,7 +18,7 @@ jobs:
     
     - run: pip install -r requirements.txt
 
-    - run python main.py
+    - run: python main.py
       env:
         API_TOKEN_MONOPOLIO: $
 {{ secrets.API_TOKEN_MONOPOLIO }}
