@@ -20,7 +20,5 @@ jobs:
 
     - run: python main.py
       env:
-        API_TOKEN_MONOPOLIO: $
-{{ secrets.API_TOKEN_MONOPOLIO }}
-        GOOGLE_CREDENTIALS: $
-{{ secrets.GOOGLE_CREDENTIALS }}        
+        API_TOKEN_MONOPOLIO: $ {{ secrets.API_TOKEN_MONOPOLIO }}
+        GOOGLE_CREDENTIALS: $ {{ secrets.GOOGLE_CREDENTIALS }}        
