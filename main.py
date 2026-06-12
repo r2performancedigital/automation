@@ -21,6 +21,11 @@ def buscar_pedidos():
   while url:
     response = requests.get(url, headers=headers)
     dados = response.json()
+
+    if "results" not in dados:
+      print("ERRO API:")
+      print(dados)
+      break
     
     todos_pedidos.extend(dados["results"])
     
