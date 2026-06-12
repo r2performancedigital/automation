@@ -28,7 +28,7 @@ def buscar_pedidos():
     print("Pedidos:", len(todos_pedidos))
     time.sleep(0.2)
 
-        return pd.DataFrame(todos_pedidos)
+    return pd.DataFrame(todos_pedidos)
 
 df = buscar_pedidos()
 
