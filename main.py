@@ -25,7 +25,7 @@ def buscar_pedidos():
     todos_pedidos.extend(dados["results"])
     
     url = dados["next"]
-    print("Pedidos:", len(todos_pedidos)
+    print("Pedidos:", len(todos_pedidos))
     time.sleep(0.2)
 
 return pd.DataFrame(todos_pedidos)
@@ -34,7 +34,7 @@ df = buscar_pedidos()
 
 print(df.shape)
 
-credenciais = json.loads(os.environ)["GOOGLE_CREDENTIALS"]
+credenciais = json.loads(os.environ["GOOGLE_CREDENTIALS"])
 
 scope = [
     "https://www.googleapis.com/auth/spreadsheets",
